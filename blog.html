@@ -1,0 +1,355 @@
+<!-- navbar.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Blog</title>
+    <style>
+        
+        .grid-container {
+            padding-left: 10px;
+            display: grid;
+            margin-top: 80px;
+            grid-template-columns: repeat(3, 1fr);
+            padding-top: 10px;
+            justify-content: center;
+        }
+
+        .card {
+            height: 450px;
+            margin: 50px;
+            width: 300px;
+            overflow: hidden;
+            position: relative;
+            background-color: rgb(197, 193, 193);
+        
+        }
+
+        img {
+            height: 270px;
+            width: 280px;
+            border-radius: 3px;
+            transition: .5s;
+            margin: 5px;
+            margin-left: 10px;
+        }
+
+        .card span {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: var(--exDark);
+            color: white;
+            font-size: 1.4rem;
+            padding: 0.3rem 0.6rem;
+        }
+
+        .blog-text {
+        position: relative;
+        bottom: 10px;
+        right: 10px;
+        left: 10px; 
+        color:black;
+        padding: 0.3rem 0.6rem;
+        font-size: 1.4rem;
+        }
+
+        .blog-text span i{
+            color: white;
+        }
+        .blog-text span:hover >i {
+            cursor: pointer;
+            color: red;
+        }
+
+        .blog-text h2 {
+            font-family: var(--Playfair);
+            font-size: 26px;
+            margin-top: 10px;
+            
+        }
+
+        .blog-text p {
+            
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 5px;
+            font-family: 'georgia';
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <a href="#" class="logo">Travel Blog</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </div> 
+     </header>
+     
+    <div class="grid-container">
+        <div class = "blog-item">
+            <div class="card">
+                <img src="Kedarnath1.jpg" alt="kedarnath">
+                <span><i class = "fas fa-heart"></i></span>   
+               <div class = "blog-text">
+                <h2>kedarnath</h2>
+                <p>18 April, 2020</p>
+                <p>Kedarnath: A Spiritual Journey to the Abode of Lord Shiva</p>
+            </div>
+            </div>
+        </div>
+
+
+        <div class = "blog-item">
+            <div class="card">
+                 <img src="kedarnath2.jpg" alt="kedarnath">
+                <span><i class = "fas fa-heart"></i></span>
+                <div class = "blog-text">
+                <h2>kedarnath</h2>
+                <p>18 April, 2020</p>
+                <p>Unveiling the Majestic Beauty of Kedarnath: A Himalayan Paradise</p>
+            </div>
+            </div>
+          </div>
+          
+        <div class = "blog-item">  
+            <div class="card">
+                <img src="kedarnath3.jpg" alt="kedarnath">
+                <span><i class = "fas fa-heart"></i></span>
+                <div class = "blog-text">
+                <h2>kedarnath</h2>
+                <p>18 April, 2020</p>
+                <p>Exploring the Mystical Charms of Kedarnath: Where Nature Meets Divinity</p>
+            </div>
+            </div>
+        </div>
+    
+    
+        <div class = "blog-item">
+            <div class="card">
+                <img src="ooty1.jpg" alt="ooty">
+                <span><i class = "fas fa-heart"></i></span>
+                <div class = "blog-text">
+                <h2>Ooty</h2>
+                <p>20 June, 2020</p>
+                <p>Escape to the Serene Beauty of Ooty: A Hill Station Paradise</p>
+            </div>
+            </div>
+        </div>   
+
+
+
+        <div class = "blog-item">
+            <div class="card">
+                <img src="ooty2.jpg" alt="ooty">
+                <span><i class = "fas fa-heart"></i></span>
+        
+            <div class = "blog-text">
+                <h2>Ooty</h2>
+                <p>20 June, 2020</p>
+                <p>Discover Tranquility in Ooty's Enchanting Tea Gardens</p>
+        </div>
+        </div>
+        </div>
+
+
+
+        <div class = "blog-item">
+        <div class="card">
+            <img src="ooty3.jpg" alt="ooty">
+            <span><i class = "fas fa-heart"></i></span>
+    
+        <div class = "blog-text">
+            <h2>Ooty</h2>
+            <p>20 June, 2020</p>
+            <p>Embark on an Adventurous Journey: Exploring Ooty's Lush Forests and Waterfalls</p>
+        </div> 
+        </div>
+        </div>
+
+
+        <div class = "blog-item">
+        <div class="card">
+            <img src="dhanushkodi1.jpg" alt="dhanushkodi">
+            <span><i class = "fas fa-heart"></i></span>
+
+        <div class = "blog-text">
+            <h2>Dhanushkodi</h2>
+            <p>10 September, 2021</p>
+            <p>Unveiling the Mysteries of Dhanushkodi: A Forgotten Ghost Town</p>
+        </div>
+        </div>
+        </div>
+
+
+
+        <div class = "blog-item">
+        <div class="card">
+            <img src="dhanushkodi2.jpg" alt="dhanushkodi">
+            <span><i class = "fas fa-heart"></i></span>
+        
+        <div class = "blog-text">
+            <h2>Dhanushkodi</h2>
+            <p>10 September, 2021</p>
+            <p>Witness the Raw Beauty of Dhanushkodi: Where Land and Sea Collide</p>
+        </div>
+        </div>
+        </div>
+
+
+
+        <div class = "blog-item">
+        <div class="card">
+            <img src="dhanushkodi3.jpg" alt="dhanushkodi">
+            <span><i class = "fas fa-heart"></i></span>
+
+        <div class = "blog-text">
+            <h2>Dhanushkodi</h2>
+            <p>10 September, 2021</p>
+            <p>Dhanushkodi: Where History Meets the Ocean's Edge</p>
+        </div>
+        </div>
+        </div>
+
+
+        <div class = "blog-item">
+        <div class="card">
+            <img src="thirupathi1.jfif" alt="thirupathi">
+            <span><i class = "fas fa-heart"></i></span>
+        
+        <div class = "blog-text">
+            <h2>Thirupathi</h2>
+            <p>17 December, 2021</p>
+            <p>Thirupathi: A Sacred Pilgrimage to the Abode of Lord Venkateswara</p>
+        </div>
+        </div>
+        </div>
+
+
+        <div class = "blog-item">
+        <div class="card">
+            <img src="thirupathi2.jfif" alt="thirupathi">
+            <span><i class = "fas fa-heart"></i></span>
+
+        <div class = "blog-text">
+            <h2>Thirupathi</h2>
+            <p>17 December, 2021</p>
+            <p>Exploring the Spiritual Aura of Thirupathi: Where Devotion Takes Flight</p>
+        </div>
+        </div>
+        </div>
+
+
+
+        <div class = "blog-item">
+        <div class="card">
+            <img src="thirupathi3.jfif" alt="thirupathi">
+            <span><i class = "fas fa-heart"></i></span>
+        
+        <div class = "blog-text">
+            <h2>Thirupathi</h2>
+            <p>17 December, 2021</p>
+            <p>Thirupathi: Divine Blessings and Architectural Marvels Await</p>
+        </div>
+        </div>
+        </div>
+
+
+        <div class = "blog-item">
+        <div class="card">
+            <img src="isha1.jpg" alt="isha">
+            <span><i class = "fas fa-heart"></i></span>
+
+        <div class = "blog-text">
+            <h2>Heading</h2>
+            <p>23 March, 2022</p>
+            <p>Isha: Discovering Inner Peace and Spiritual Wisdom at the Isha Yoga Center</p>
+        </div>
+        </div>
+        </div>
+
+
+
+        <div class = "blog-item">
+        <div class="card">
+            <img src="isha2.jpg" alt="isha">
+            <span><i class = "fas fa-heart"></i></span>
+
+        <div class = "blog-text">
+            <h2>Heading</h2>
+            <p>23 March, 2022</p>
+            <p>Immerse Yourself in the Tranquility of Isha: A Journey to Self-Realization</p>
+        </div>
+        </div>
+        </div>
+
+
+        <div class = "blog-item">
+        <div class="card">
+            <img src="isha3.jpg" alt="isha">
+            <span><i class = "fas fa-heart"></i></span>
+        
+        <div class = "blog-text">
+            <h2>Heading</h2>
+            <p>23 March, 2022</p>
+            <p>Isha: Unleashing the Power of Yoga and Meditation for Holistic Well-being</p>
+        </div>
+        </div>
+        </div>
+
+
+        <div class = "blog-item">
+        <div class="card">
+            <img src="kerala1.jpg" alt="kerala">
+            <span><i class = "fas fa-heart"></i></span>
+        
+        <div class = "blog-text">
+            <h2>Heading</h2>
+            <p>15 November, 2022</p>
+            <p>Kerala: The Enchanting Backwaters and Serene Beaches of God's Own Country</p>
+        </div>
+        </div>
+        </div>
+
+
+        <div class = "blog-item">
+        <div class="card">
+            <img src="kerala2.jfif" alt="kerala">
+            <span><i class = "fas fa-heart"></i></span>
+    
+        <div class = "blog-text">
+            <h2>Heading</h2>
+            <p>15 November, 2022</p>
+            <p>Experience the Magical Beauty of Kerala: A Paradise of Lush Greenery and Rich Culture</p>
+        </div>
+        </div>
+        </div>
+
+
+        <div class = "blog-item">
+        <div class="card">
+            <img src="kerala3.jfif" alt="kerala">
+            <span><i class = "fas fa-heart"></i></span>
+    
+        <div class = "blog-text">
+            <h2>Heading</h2>
+            <p>15 November, 2022</p>
+            <p>Kerala: Indulge in the Exquisite Cuisine and Ayurvedic Wellness of South India</p>
+        </div>
+        </div>
+        </div>
+    </div>  
+</body>
+</html>

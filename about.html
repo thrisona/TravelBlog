@@ -1,0 +1,161 @@
+<!-- navbar.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Blog</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Lato',sans-serif;
+        }
+        html,body{
+            width:100%;
+            height:100%;
+            display: flex;
+            justify-content: center;
+            background-image: url(about.jpg);
+            background-position: 100%;
+            background-size: cover;
+        }
+        .wrapper{
+            display: flex;
+            width: 70%;
+            justify-content: space-around;
+
+        }
+        .card{
+            width:150px;
+            height: 180px;
+            padding: 2rem 1rem;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            transition: 0.5s ease-in-out;
+            margin-top: 600px;
+
+        }
+        .card:hover{
+            transform: translate(20px);
+        }
+        .card:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left:0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom,rgba(0,176,155,0.5),rgb(70, 153, 139));
+            z-index: 2;
+            transition: 0.5s all;
+            opacity: 0;   
+        }
+        .card:hover:before{
+            opacity: 1;
+            
+        }
+        .card img{
+            width:100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+        .card .info{
+            position: relative;
+            z-index: 3;
+            color: #fff;
+            opacity: 1;
+            transform: translateY(30px);
+            transition: 0.5s all;
+        }
+        .card .info .btn{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+            margin-bottom: 5px;
+        }
+        
+        .container{
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 100px; 
+            padding: 20px;
+            z-index: 1;
+        }
+            
+        .container p{
+            color:white;
+            font-size: 25px;
+            margin-top: 80px;
+            margin-left: 80px;
+            margin-right: 80px;
+            font-family: 'georgia';
+            line-height: 1.5;
+            word-spacing: 5px;
+            text-align: center;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <a href="#" class="logo">Travel Blog</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </div> 
+     </header>   
+     <div class="container">
+        <p> "Greetings, fellow travel enthusiasts! I'm Goparaju Thrisona,a passionate travel blogger,
+            and the voice behind this travel blog .I believe that
+            travel is not just about visiting new places, but 
+            about immersing yourself in diverse cultures, exploring and creating unforgettable 
+            memories. From tranquil beaches to bustling cities, I've been fortunate to witness the beauty 
+            and diversity our planet has to offer. My goal is to inspire you to step out of your comfort 
+            zone, embrace the unknown, and create your own travel narrative.I aim to transport
+            you to these extraordinary places and breathtaking visuals. Join me on this incredible journey
+             as we discover the world together!
+            Let's embark on this virtual adventure together and ignite your wanderlust!</p>
+     </div>
+    
+</body>
+<div class="wrapper">
+    <div class="card">
+        <img src="youtube.png">
+        <div class="info">
+            <a href="https://www.youtube.com/" class="btn">View</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="facebook.png">
+        <div class="info">
+            <a href="https://www.facebook.com/login.php/" class="btn">View</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="instagram.png">
+        <div class="info">
+            <a href="https://www.instagram.com/?hl=en" class="btn">View</a>
+        </div>
+    </div>  
+    </div>
+</html>
+
+

@@ -1,0 +1,143 @@
+<!-- navbar.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Blog</title>
+    <style>
+         .card{
+            height: 500px;
+            margin: 70px;
+            box-shadow:5px 5px 20px black;
+            overflow: hidden;
+           
+          
+        }
+        img{
+            height: 400px;
+            width: 350px;
+            border-radius: 3px;
+            transition: .5s;
+        }   
+        .intro{
+            height: 70px;
+            width: 350px;
+            padding: 5px;
+            box-sizing: border-box;
+            position: relative;
+           
+            background: rgb(27,27,27,.5);
+            color: white;
+            transition: .5s;
+        }
+        h1{
+            margin:10px;
+            font-size: 40px;
+        }
+        p{
+            font-size: 20px;
+            margin: 20px;
+            visibility: hidden;
+            opacity: 0;
+        }
+        span{
+            font-weight: bold;
+        }
+        .card:hover{
+            cursor: pointer;
+        }
+        .card:hover .intro{
+            height: 220px;
+            bottom: 240px;
+            background: black;
+        }
+        .card:hover p{
+            opacity: 1;
+            visibility: visible;
+        }
+        .card:hover img{
+            transform: scale(1.1 )rotate(-3deg);
+        }
+        .grid-container{
+            
+           padding-left: 10px;
+            display: grid;
+           margin-top: 30px;
+             grid-template-columns: 450px 450px 450px;
+             padding-top : 10px;
+             justify-content: center;
+         }
+        
+    </style>
+</head>
+<body>
+    <div class = "container"> 
+    <header>
+        <div class="main">
+            <a href="#" class="logo">Travel Blog</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </div> 
+     </header>  
+        <div class="grid-container">
+            <div class="card">
+                <img src="kedarnath.png" alt="kedarnath">
+                <div class="intro">
+                    <h1>Kedarnath</h1>
+                    <p>Kedarnath is a sacred Hindu pilgrimage site nestled amidst <br>the scenic beauty of the Himalayas.  </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="ooty.png" alt="ooty">
+                <div class="intro">
+                    <h1>Ooty</h1>
+                    <p>Ooty is a picturesque hill station known for its scenic beauty, <br>tea plantations, and pleasant climate. </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="dhanushkodi.png" alt="dhanushkodi">
+                <div class="intro">
+                    <h1>Dhanushkodi</h1>
+                    <p>Dhanushkodi is a ghost town at the tip of Rameswaram Island, known for its mystical charm <br>and breathtaking coastal views </p>
+                </div>
+            </div>
+        
+        
+       
+            <div class="card">
+                <img src="thirupathi.png" alt="kedarnath">
+                <div class="intro">
+                    <h1>Thirupathi</h1>
+                    <p>Tirupati is a popular pilgrimage, known for its ancient temple dedicated to Lord Venkateswara and its vibrant spiritual atmosphere.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="isha.png" alt="ooty">
+                <div class="intro">
+                    <h1>Isha</h1>
+                    <p>Isha Foundation, founded by Sadhguru, is a non-profit organization that promotes holistic well-being, yoga, and inner transformation</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="kerala.png" alt="dhanushkodi">
+                <div class="intro">
+                    <h1>Kerala</h1>
+                    <p>Kerala, often referred to as "God's Own Country," is a captivating state known for its lush green landscapes, backwaters, pristine beaches, and rich cultural heritage.</p>
+                </div>
+            </div> </div> 
+        
+        
+</body>
+</html>
+
+
+
